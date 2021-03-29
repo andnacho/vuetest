@@ -18,6 +18,7 @@ const routes = [
   {
     path: '/about',
     name: 'About',
+    props: (route) => ({ showExtra: route.query.e }),
     component: About
   }
 ]
